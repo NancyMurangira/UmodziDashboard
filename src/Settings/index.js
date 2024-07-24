@@ -19,6 +19,7 @@ const Settings = () => {
   const handleLanguageChange = (e) => {
     setSelectedLanguage(e.target.value);
   };
+
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <h1>Settings</h1>
@@ -83,10 +84,13 @@ const Settings = () => {
               <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
               <span className="slider round"></span>
             </label>
+
           </div>
         </div>
       </div>
     </div>
+
+    
   );
 }
 export default Settings;
